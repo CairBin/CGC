@@ -1,0 +1,10 @@
+^G:\GITUPLOAD\CGC\BUILD\CMAKEFILES\981BD530C876EEABCE66A1D94A781E11\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SG:/GitUpload/CGC -BG:/GitUpload/CGC/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file G:/GitUpload/CGC/build/CGC.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
